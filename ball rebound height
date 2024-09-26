@@ -1,0 +1,14 @@
+import java.util.*;
+class Mddin{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int h=sc.nextInt();
+    int v=sc.nextInt();
+    int vn=sc.nextInt();
+    int res=0;
+    int e=v/vn;
+    res=h*(int)Math.pow(e,2);
+    
+    System.out.println(res);
+}
+}
