@@ -1,0 +1,36 @@
+import java.util.*;
+class maini{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int temp=0,k=0;
+        int b[]=null;
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(a[i]+a[j]==18){
+                    k=a[i]*a[j];
+                    if(k>temp){
+                        temp=k;
+                        
+                        b= new int[] {Math.max(a[i], a[j]), Math.min(a[i], a[j])};
+                        }
+                    }
+                    
+                    }
+                }
+                
+                if (b!=null) {
+     
+         System.out.println(b[0]+" "+b[1]);
+
+        } else {
+            System.out.println("No pairs found");
+        }
+
+        
+    }
+}
