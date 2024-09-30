@@ -1,3 +1,11 @@
+in:
+5
+50 40 30 20 10 
+op:90
+
+
+
+
 import java.util.*;
 import java.util.regex.*;
 class main{
