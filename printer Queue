@@ -1,0 +1,17 @@
+import java.util.*;
+import java.util.regex.*;
+class main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int d=0;
+        int x=sc.nextInt();
+        int n=sc.nextInt();
+        if(x>=10){
+            System.out.println(0);
+        }else{
+            d=((x-1)*(10-n));
+        }
+       System.out.println(d);
+    }
+}
