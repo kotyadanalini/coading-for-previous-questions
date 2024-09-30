@@ -1,0 +1,21 @@
+import java.util.*;
+class min{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        int c=0;
+        for(int i=1;i<=n;i++){
+            String b=Integer.toBinaryString(i);
+            String s=b.replace('1','2').replace('0','1');
+            int sum=0;
+            for(char ch:s.toCharArray()){
+               sum+=Character.getNumericValue(ch); 
+            }
+            if(sum%2!=0){
+                c++;
+            }
+        }
+        System.out.println(c);
+    }
+}
