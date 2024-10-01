@@ -1,0 +1,15 @@
+ip:5 3
+op:7
+
+
+
+import java.util.*;
+class Mini{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int c=sc.nextInt();
+        int d=(n|c);
+        System.out.println(d);
+    }
+}
