@@ -1,3 +1,12 @@
+ip:3
+20 35 30
+5 6
+0
+op:2
+
+
+
+
 import java.util.*;
 import java.util.regex.*;
 class main{
@@ -16,16 +25,20 @@ class main{
         int r=sc.nextInt();
         
         int c=0;
+        boolean found=false;
         c=(d*q)+r;
         for(int i=0;i<n;i++)
         {
             if(c==a[i]){
                 c+=a[i];
                  System.out.println(i);
-            }else{
-                System.out.println(-1);
-            }
+           found=true;
+           break;
             
+        }
+        }
+        if(!found){
+            System.out.println(-1);
         }
       
     }
