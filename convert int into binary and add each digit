@@ -1,0 +1,14 @@
+import java.util.*;
+class Mini{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int f=0;
+        String s=Integer.toBinaryString(n);
+        for(int i=0;i<s.length();i++){
+            int d=Integer.parseInt(String.valueOf(s.charAt(i)));
+            f+=d;
+        }
+        System.out.println(f);
+    }
+}
