@@ -1,0 +1,18 @@
+java -cp /tmp/lO8eW9Vogy/HelloWorld
+2000
+50
+3000
+
+=== Code Execution Successful ===
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       int p=sc.nextInt();
+       int t=sc.nextInt();
+       int si=(p*t*3)/100;
+       System.out.println(si);
+      
+    }
+}
