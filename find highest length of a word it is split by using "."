@@ -1,0 +1,24 @@
+java -cp /tmp/lSq732S4MO/HelloWorld
+hello.world.map
+5
+
+=== Code Execution Successful ===
+
+
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       String s=sc.nextLine();
+       String st[]=s.split("\\.");
+       int n=0;
+       for(int i=0;i<st.length;i++){
+           if(st[i].length()>n){
+               n=st[i].length();
+           }
+       }
+       System.out.println(n);
+      
+    }
+}
